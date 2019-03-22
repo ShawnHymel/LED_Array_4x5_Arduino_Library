@@ -87,6 +87,7 @@ public:
 	void pixel(uint8_t x, uint8_t y, uint8_t on = 1);
 	
 	// ***TODO: rest of drawing and scrolling text
+	void stopScrolling();
 	
 	// Support methods
 	uint8_t getArrayWidth();

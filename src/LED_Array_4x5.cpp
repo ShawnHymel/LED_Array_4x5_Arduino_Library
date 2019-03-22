@@ -193,6 +193,14 @@ void LED_Array_4x5::pixel(uint8_t x, uint8_t y, uint8_t on /* = 1 */)
 // ***TODO: rest of drawing and scrolling text
 
 /**
+ * @brief Stops scrolling text and deletes scroll buffer
+ */
+void LED_Array_4x5::stopScrolling()
+{
+    //***TODO: Implement this
+}
+
+/**
  * @brief Returns the width of the LED array
  *
  * @return width of the array (number of LEDs)
@@ -302,7 +310,7 @@ void LED_Array_4x5::isr()
  * LED_Array_4x5 class. To do this, we instantiate an LED_Array_4x5 object
  * (globally) in the .cpp file.
  **/
-ISR(TIMER2_OVF_vect) 
+ISR(TIMER1_OVF_vect) 
 {
     Plex.isr();
 }
